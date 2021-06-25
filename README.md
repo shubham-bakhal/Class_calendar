@@ -7,7 +7,7 @@
 
 
 // Alternate Link for project 
-Frontend -> https://github.com/smbakhal/class_cal_frontend
+Frontend -> https://github.com/smbakhal/class_cal_frontend <br />
 Backend ->  https://github.com/smbakhal/ClassCal-Backend
 
 Figma and Postman files added in this repo
