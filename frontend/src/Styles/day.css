@@ -1,0 +1,37 @@
+.day {
+  text-align: center;
+  padding: 10px;
+  height: 120px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 1;
+  border: 1px solid #4B5563;
+}
+
+.day:hover {
+  background-color: #EEF2FF;
+}
+
+.day + .currentDay {
+  background-color: #EEF2FF;
+}
+
+.padding {
+  cursor: default !important;
+  background-color: white !important;
+}
+
+.event {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px;
+  margin: 3px;
+  background-color: #FFD8C2;
+  color: #752F08;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+  z-index: 3;
+}
+/*# sourceMappingURL=day.css.map */

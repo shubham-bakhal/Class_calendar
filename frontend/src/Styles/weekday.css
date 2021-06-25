@@ -1,0 +1,14 @@
+#weekDay {
+  width: 100%;
+}
+
+#weekDay p {
+  text-align: center;
+  padding: 5px;
+}
+
+#weekDay .currentDay {
+  background-color: #FFD8C2;
+  color: #752F08;
+}
+/*# sourceMappingURL=weekday.css.map */

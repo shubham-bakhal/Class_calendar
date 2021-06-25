@@ -1,0 +1,14 @@
+@import './variables/_variables.scss';
+
+#weekDay {
+  width: 100%;
+  p {
+    text-align: center;
+    padding: 5px;
+  }
+  .currentDay{
+      background-color: $secondary-light;
+      color: $secondary-dark;
+      
+  }
+}

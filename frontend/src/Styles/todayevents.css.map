@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,YAAY,CAAC;EACX,gBAAgB,ECDD,OAAO;EDEtB,KAAK,ECAQ,OAAO;EDCpB,WAAW,EAAE,IAAI;EACjB,QAAQ,EAAE,MAAM;EAChB,UAAU,EAAE,MAAM;EAClB,eAAe,EAAE,IAAI;CAQtB;;AAdD,AAOE,YAPU,CAOV,mBAAmB,CAAC;EAClB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,aAAa,EAAE,IAAI;CACpB",
+    "sources": [
+        "todayevents.scss",
+        "variables/_variables.scss"
+    ],
+    "names": [],
+    "file": "todayevents.css"
+}

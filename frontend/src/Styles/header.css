@@ -1,0 +1,116 @@
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 7.2% 0% 2%;
+  margin: 1% 0%;
+}
+
+#header button {
+  border: none;
+  outline: none;
+}
+
+#header .left_header {
+  display: flex;
+}
+
+#header .left_header p {
+  margin: 0px 15px;
+}
+
+#header .left_header button {
+  background-color: white;
+}
+
+#header .left_header img {
+  cursor: pointer;
+}
+
+#header .left_header .date_Month {
+  margin-top: 8px;
+}
+
+#header .left_header div {
+  display: flex;
+  cursor: pointer;
+  border: 2px solid #6366F1;
+  border-radius: 4px;
+  padding: 8px 8px;
+  margin-left: 40px;
+}
+
+#header .left_header div img {
+  margin-left: 20px;
+}
+
+#header .right_header {
+  display: flex;
+}
+
+#header .right_header .createbtn {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  background-color: #6366F1;
+  margin-right: 10px;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 0 16px;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 1.15;
+  font-size: 14px;
+  height: 36px;
+  word-spacing: 0px;
+  letter-spacing: 0.0892857143em;
+  text-decoration: none;
+  text-transform: uppercase;
+  min-width: 64px;
+  border: none;
+  text-align: center;
+  box-shadow: 0px 3px 1px -2px black, 0px 2px 2px 0px black, 0px 1px 5px 0px black;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#header .right_header .createbtn img {
+  margin-right: 10px;
+}
+
+#header .right_header .select_dropdown {
+  width: 100px;
+  position: relative;
+}
+
+#header .right_header .select_dropdown select {
+  cursor: pointer;
+  height: 38px;
+  padding: 8px 15px;
+  line-height: 18px;
+  font-size: 16px;
+  min-width: 64px;
+  border: 2px solid #6366F1;
+  border-radius: 4px;
+}
+
+@media (max-width: 710px) {
+  #header .left_header div {
+    padding: 6px;
+  }
+  #header .right_header .createbtn {
+    font-size: 14px;
+  }
+  #header .right_header .createbtn img {
+    width: 20%;
+  }
+  #header .right_header .select_dropdown select {
+    font-size: 12px;
+    padding: 5px;
+    width: 70px;
+  }
+}
+/*# sourceMappingURL=header.css.map */

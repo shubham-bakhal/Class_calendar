@@ -1,0 +1,9 @@
+@import './variables/_variables';
+
+#dayDetailDay {
+  display: flex;
+  flex-direction: row;
+  div {
+    width: 160px;
+  }
+}

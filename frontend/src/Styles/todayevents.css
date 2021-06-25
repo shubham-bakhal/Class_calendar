@@ -1,0 +1,16 @@
+#todayEvents {
+  background-color: #E0E7FF;
+  color: #151b50;
+  padding-top: 25px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+#todayEvents .todayEventsheading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=todayevents.css.map */

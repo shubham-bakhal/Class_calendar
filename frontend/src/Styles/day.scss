@@ -1,0 +1,36 @@
+@import './variables/_variables';
+
+.day {
+  text-align: center;
+  padding: 10px;
+  height: 120px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 1;
+
+  border: 1px solid $gray-color;
+  &:hover {
+    background-color: $primary-light;
+  }
+}
+.day + .currentDay {
+  background-color: $primary-light;
+}
+.padding {
+  cursor: default !important;
+  background-color: white !important;
+}
+.event {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px;
+  margin: 3px;
+  // width: 146px;
+  background-color: $secondary-light;
+  color: $secondary-dark;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+  z-index: 3;
+}

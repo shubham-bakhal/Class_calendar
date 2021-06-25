@@ -1,0 +1,31 @@
+@import './variables/_variables.scss';
+
+#week {
+  display: grid;
+  grid-template-columns: 3% 97%;
+  .time {
+    margin-top: 77px;
+    p {
+      font-size: 12px;
+      color: $gray-color;
+      margin: 18px 0px;
+      float: right;
+    }
+  }
+  .time_right {
+    .weekDays {
+      display: flex;
+      justify-content: space-around;
+      margin: 0px 15px;
+      p {
+        text-align: center;
+        color: $gray-color;
+        font-weight: 600;
+      }
+    }
+    .week_grid {
+      display: flex;
+      margin: 10px;
+    }
+  }
+}

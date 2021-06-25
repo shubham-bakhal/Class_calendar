@@ -1,0 +1,7 @@
+@import './variables/_variables.scss';
+
+.division {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 91vh;
+}

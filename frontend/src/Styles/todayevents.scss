@@ -1,0 +1,17 @@
+@import './variables/_variables.scss';
+
+#todayEvents {
+  background-color: $primary-light2;
+  color: $primary-dark;
+  padding-top: 25px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  .todayEventsheading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+ 
+}

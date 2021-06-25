@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,QAAQ,CAAC;EACP,KAAK,EAAE,IAAI;CAUZ;;AAXD,AAEE,QAFM,CAEN,CAAC,CAAC;EACA,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,GAAG;CACb;;AALH,AAME,QANM,CAMN,WAAW,CAAA;EACP,gBAAgB,ECJJ,OAAO;EDKnB,KAAK,ECJM,OAAO;CDMrB",
+    "sources": [
+        "weekday.scss",
+        "variables/_variables.scss"
+    ],
+    "names": [],
+    "file": "weekday.css"
+}

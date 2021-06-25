@@ -1,0 +1,35 @@
+#daydetail {
+  display: grid;
+  grid-template-columns: 3% 97%;
+}
+
+#daydetail .time {
+  margin-top: 77px;
+}
+
+#daydetail .time p {
+  font-size: 12px;
+  color: #4B5563;
+  margin: 18px 0px;
+  float: right;
+}
+
+#daydetail .time_rightday {
+  margin-left: 20px;
+}
+
+#daydetail .time_rightday p {
+  font-weight: 600;
+  color: #4B5563;
+}
+
+#daydetail .time_rightday h2 {
+  color: #752F08;
+  margin-bottom: 5px;
+}
+
+#daydetail .time_rightday .day_grid {
+  display: flex;
+  margin: 10px;
+}
+/*# sourceMappingURL=daydetail.css.map */

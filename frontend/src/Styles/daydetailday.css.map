@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;CAIpB;;AAND,AAGE,aAHW,CAGX,GAAG,CAAC;EACF,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "daydetailday.scss",
+        "variables/_variables.scss"
+    ],
+    "names": [],
+    "file": "daydetailday.css"
+}

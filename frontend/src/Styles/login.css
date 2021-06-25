@@ -1,0 +1,67 @@
+#login {
+  height: 90vh;
+  overflow: hidden;
+  background-color: #EEF2FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#login .loginform {
+  width: 450px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #6366F1;
+}
+
+#login .loginform span {
+  color: #4B5563;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#login .loginform #email {
+  margin-bottom: 20px;
+}
+
+#login .loginform #forgotPassword {
+  color: #6366F1;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-left: 45%;
+  font-size: 12px;
+}
+
+#login .loginform #loginBtn {
+  border: none;
+  border-radius: 8px;
+  margin-top: 25px;
+  background-color: #6366F1;
+  color: #EEF2FF;
+  font-size: 16px;
+  width: 300px;
+  padding: 15px 0px;
+}
+
+#login .loginform input {
+  display: block;
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+}
+
+#login #donthave {
+  color: #4B5563;
+  width: 450px;
+  margin-top: 15px;
+}
+
+#login #donthave .redirect {
+  color: #6366F1;
+}
+/*# sourceMappingURL=login.css.map */

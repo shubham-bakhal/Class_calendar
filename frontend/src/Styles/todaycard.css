@@ -1,0 +1,41 @@
+#TodayCard {
+  padding: 3% 3%;
+  color: white;
+}
+
+#TodayCard:nth-child(even) {
+  background-color: #c7d2fe;
+}
+
+#TodayCard:nth-child(odd) {
+  background-color: #EEF2FF;
+}
+
+#TodayCard .topic {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #4B5563;
+}
+
+#TodayCard .eventInfo {
+  color: #6B7280;
+  font-size: 14px;
+  display: flex;
+  font-weight: 500;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+
+#TodayCard .eventInfo p {
+  display: inline-block;
+}
+
+#TodayCard .eventInfo div {
+  display: inline-block;
+  color: #752F08;
+  background-color: #FFD8C2;
+  border-radius: 10px;
+  padding: 2px 8px;
+}
+/*# sourceMappingURL=todaycard.css.map */

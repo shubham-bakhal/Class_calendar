@@ -1,0 +1,36 @@
+@import './variables/_variables.scss';
+
+#TodayCard {
+  padding: 3% 3%;
+  color: white;
+  &:nth-child(even) {
+    background-color: #c7d2fe;
+  }
+  &:nth-child(odd) {
+    background-color: $primary-light;
+  }
+  .topic {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: $gray-color;
+  }
+  .eventInfo {
+    color: $primary-light3;
+    font-size: 14px;
+    display: flex;
+    font-weight: 500;
+    margin-top: 5px;
+    justify-content: space-between;
+    p {
+      display: inline-block;
+    }
+    div {
+      display: inline-block;
+      color: $secondary-dark;
+      background-color: $secondary-light;
+      border-radius: 10px;
+      padding: 2px 8px;
+    }
+  }
+}

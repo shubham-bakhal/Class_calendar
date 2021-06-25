@@ -1,0 +1,31 @@
+@import './variables/_variables';
+
+
+#daydetail{
+    display: grid;
+  grid-template-columns: 3% 97%;
+  .time {
+    margin-top: 77px;
+    p {
+      font-size: 12px;
+      color: $gray-color;
+      margin: 18px 0px;
+      float: right;
+    }
+  }
+  .time_rightday {
+      margin-left: 20px;
+      p{
+        font-weight: 600;
+        color: $gray-color;
+      }
+      h2{
+          color: $secondary-dark;
+          margin-bottom: 5px;
+      }
+    .day_grid {
+      display: flex;
+      margin: 10px;
+    }
+  }
+}

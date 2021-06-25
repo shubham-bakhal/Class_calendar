@@ -1,0 +1,65 @@
+@import './variables/_variables.scss';
+
+
+#login {
+
+  height: 90vh;
+  overflow: hidden;
+  background-color: $primary-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .loginform {
+    width: 450px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid $primary-color;
+
+    span {
+      color: $gray-color;
+      display: block;
+      margin-bottom: 5px;
+    }
+    #email {
+      margin-bottom: 20px;
+    }
+    #forgotPassword {
+      color: $primary-color;
+      margin-bottom: 20px;
+      margin-top: 5px;
+      margin-left: 45%;
+      font-size: 12px;
+    }
+    #loginBtn {
+      border: none;
+      border-radius: 8px;
+      margin-top: 25px;
+      background-color: $primary-color;
+      color: $primary-light;
+      font-size: 16px;
+      width: 300px;
+      padding: 15px 0px;
+    }
+
+    input {
+      display: block;
+      padding: 10px;
+      width: 300px;
+      border: none;
+      border-radius: 4px;
+    }
+  }
+  #donthave {
+    color: $gray-color;
+
+    width: 450px;
+    margin-top: 15px;
+    .redirect {
+      color: $primary-color;
+    }
+  }
+}
