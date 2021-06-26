@@ -8,6 +8,7 @@ export const searchAvailableTeachers = data => {
     axios
       .post('/user/availableTeachers', { ...data })
       .then(res => {
+
         dispatch({
           type: userConstants.GET_AVA_TEA_SUCCESS,
           payload: {
@@ -16,8 +17,9 @@ export const searchAvailableTeachers = data => {
         });
       })
       .catch(e => {
-        const error = e.response.data;
-        toast.error(error);
+
+        const error = e;
+        // toast.error(error);
 
         dispatch({
           type: userConstants.GET_AVA_TEA_FAILURE,
@@ -33,6 +35,7 @@ export const searchTeachersEvent = data => {
     axios
       .post('/user/searchTeacherForEvent', { ...data })
       .then(res => {
+
         dispatch({
           type: userConstants.GET_SEARCHED_TEA_SUCCESS,
           payload: {
@@ -41,8 +44,9 @@ export const searchTeachersEvent = data => {
         });
       })
       .catch(e => {
-        const error = e.response.data;
-        toast.error(error);
+
+        const error = e;
+        // toast.error(error);
 
         dispatch({
           type: userConstants.GET_SEARCHED_TEA_FAILURE,

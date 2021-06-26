@@ -10,15 +10,19 @@ const Navbar = () => {
   const auth = useSelector(state => state.auth);
   const [searchStr, setSearchStr] = useState('');
   const dispatch = useDispatch();
+
   const searchTeacher = e => {
     e.preventDefault();
-    dispatch(searchTeachersEvent({searchStr}));
-    setSearchStr('')
+    if (searchStr.length < 1) {
+    } else {
+      dispatch(searchTeachersEvent({ searchStr }));
+      setSearchStr('');
+    }
   };
 
   const logout = () => {
     dispatch(userLogoutAction());
-  }
+  };
 
   return (
     <div id="navbar">

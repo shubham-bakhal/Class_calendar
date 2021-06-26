@@ -63,13 +63,12 @@ const MonthDay = ({ day, onClick }) => {
       {day.event &&
         day.event.length > 0 &&
         day.event.map(event => (
-          <div>
+          <div key={event.id}>
             <div
               id={event.id}
               draggable="true"
               onDragStart={dragStart}
               onDragOver={dragOver}
-              key={event.id}
               event={event.day}
               className="event"
               onClick={e => {

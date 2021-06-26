@@ -8,11 +8,12 @@ const TodayEvent = () => {
   const date = useSelector(state => state.date);
   const user = useSelector(state => state.user);
   const todaysEvents = date.todaysEvents;
-  const Events = user.teacherEvents.Events;
+  const Events = user.teacherEvents ? user.teacherEvents.Events : null;
+
   return (
     <div id="todayEvents">
       <div className="todayEventsheading">
-        {user.searched ? (
+        {user.searched && Events !== null ? (
           <h3>
             {user.teacherEvents.firstName} {user.teacherEvents.lastName}
           </h3>
@@ -21,7 +22,7 @@ const TodayEvent = () => {
         )}
       </div>
 
-      {user.searched
+      {user.searched && Events !== null
         ? Events.map(t => <TodayCard key={t.id} t={t} />)
         : todaysEvents.map(t => <TodayCard key={t.id} t={t} />)}
     </div>
