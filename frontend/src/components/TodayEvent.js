@@ -9,7 +9,7 @@ const TodayEvent = () => {
   const user = useSelector(state => state.user);
   const todaysEvents = date.todaysEvents;
   const Events = user.teacherEvents ? user.teacherEvents.Events : null;
-
+  
   return (
     <div id="todayEvents">
       <div className="todayEventsheading">

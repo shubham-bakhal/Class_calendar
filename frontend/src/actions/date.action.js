@@ -87,7 +87,9 @@ export const getAllEvents = () => {
         });
       })
       .catch(e => {
-        const error = e.response.data;
+        console.log(e);
+        const error = e;
+        // const error = e.response.data;
         toast.error(error);
 
         dispatch({
@@ -186,13 +188,13 @@ export const updateDraggedEvent = data => {
   };
 };
 
-
 export const getTodaysEvents = () => {
   return dispatch => {
     dispatch({ type: dateConstants.GET_TODAYS_EVENTS_REQUEST });
     axios
       .get('/events/todaysEvents')
       .then(res => {
+        console.log(res);
         dispatch({
           type: dateConstants.GET_TODAYS_EVENTS_SUCCESS,
           payload: {

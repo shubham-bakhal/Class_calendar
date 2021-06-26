@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setDeleteEvent, updateDraggedEvent } from '../../actions/date.action';
+import {
+  getTodaysEvents,
+  setDeleteEvent,
+  updateDraggedEvent,
+} from '../../actions/date.action';
 import '../../Styles/day.css';
 
 const MonthDay = ({ day, onClick }) => {
@@ -34,6 +38,10 @@ const MonthDay = ({ day, onClick }) => {
     card.style.dispaly = 'block';
 
     e.target.appendChild(card);
+    setTimeout(() => {
+      console.log('Calling todays events');
+      dispatch(getTodaysEvents());
+    }, 500);
   };
   const dropOver = e => {
     e.preventDefault();
