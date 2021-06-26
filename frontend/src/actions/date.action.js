@@ -118,6 +118,7 @@ export const removeDeleteEvent = data => {
     });
   };
 };
+
 export const updateSelectedEvent = data => {
   return dispatch => {
     dispatch({ type: dateConstants.UPDATE_EVENTS_REQUEST });
@@ -167,6 +168,25 @@ export const deleteSelectedEvent = data => {
       });
   };
 };
+
+export const updateDraggedEvent = data => {
+  return dispatch => {
+    axios
+      .patch('/events/update', { ...data })
+      .then()
+      .catch(e => {
+        const error = e.response.data;
+        toast.error(error);
+
+        dispatch({
+          type: dateConstants.JUST_REMOTE_UPDATE_EVENT_FAILURE,
+          payload: { error: error },
+        });
+      });
+  };
+};
+
+
 export const getTodaysEvents = () => {
   return dispatch => {
     dispatch({ type: dateConstants.GET_TODAYS_EVENTS_REQUEST });

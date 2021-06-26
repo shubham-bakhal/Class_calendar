@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setDeleteEvent, updateSelectedEvent } from '../../actions/date.action';
+import { setDeleteEvent, updateDraggedEvent } from '../../actions/date.action';
 import '../../Styles/day.css';
 
 const MonthDay = ({ day, onClick }) => {
@@ -19,7 +19,7 @@ const MonthDay = ({ day, onClick }) => {
 
     const { id, TeacherId, Batch, Note, from, to } = dateToUpdate[0];
     dispatch(
-      updateSelectedEvent({
+      updateDraggedEvent({
         id,
         TeacherId,
         Batch,
@@ -34,7 +34,6 @@ const MonthDay = ({ day, onClick }) => {
     card.style.dispaly = 'block';
 
     e.target.appendChild(card);
-    e.target.removeChild(card);
   };
   const dropOver = e => {
     e.preventDefault();
