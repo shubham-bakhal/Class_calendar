@@ -82,7 +82,6 @@ export const useDate = () => {
     }
 
     dispatch(setDayArr(daysArr));
-
     dispatch(getTodaysEvents());
   }, [events, date.nav]);
   return {};

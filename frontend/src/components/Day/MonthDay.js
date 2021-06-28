@@ -4,6 +4,7 @@ import {
   getTodaysEvents,
   setDeleteEvent,
   updateDraggedEvent,
+  updateSelectedEvent,
 } from '../../actions/date.action';
 import '../../Styles/day.css';
 
@@ -23,7 +24,7 @@ const MonthDay = ({ day, onClick }) => {
 
     const { id, TeacherId, Batch, Note, from, to } = dateToUpdate[0];
     dispatch(
-      updateDraggedEvent({
+      updateSelectedEvent({
         id,
         TeacherId,
         Batch,
@@ -40,9 +41,16 @@ const MonthDay = ({ day, onClick }) => {
     e.target.appendChild(card);
     setTimeout(() => {
       console.log('Calling todays events');
+      
       dispatch(getTodaysEvents());
     }, 500);
+
+    setTimeout(() => {
+      e.target.removeChild(card);
+    }, 900);
   };
+
+
   const dropOver = e => {
     e.preventDefault();
   };
