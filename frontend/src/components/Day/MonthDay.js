@@ -40,7 +40,7 @@ const MonthDay = ({ day, onClick }) => {
 
     e.target.appendChild(card);
     setTimeout(() => {
-      console.log('Calling todays events');
+    
       
       dispatch(getTodaysEvents());
     }, 500);

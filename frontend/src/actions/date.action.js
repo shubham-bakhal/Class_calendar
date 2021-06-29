@@ -87,7 +87,7 @@ export const getAllEvents = () => {
         });
       })
       .catch(e => {
-        console.log(e);
+   
         const error = e;
         // const error = e.response.data;
         toast.error(error);
@@ -194,7 +194,7 @@ export const getTodaysEvents = () => {
     axios
       .get('/events/todaysEvents')
       .then(res => {
-        console.log(res);
+    
         dispatch({
           type: dateConstants.GET_TODAYS_EVENTS_SUCCESS,
           payload: {

@@ -6,7 +6,7 @@
   box-sizing: border-box;
   background-color: white;
   z-index: 1;
-  border: 1px solid #4B5563;
+  border: 1px solid #b6b6b6;
 }
 
 .week_box:hover {
