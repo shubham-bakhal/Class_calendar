@@ -60,7 +60,7 @@ module.exports.login = async (req, res, next) => {
 
       if (user) {
         const match = await bcrypt.compare(password, user.hashedPassword);
-
+        
         if (match) {
           req.session.user = user;
           return res.status(200).json({
