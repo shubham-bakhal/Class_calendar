@@ -52,6 +52,7 @@ module.exports.login = async (req, res, next) => {
         .map(error => ({ [error.param]: error.msg }));
       return next(new ApiError(422, firstError));
     } else {
+      console.log("No validation error");
       const user = await User.findOne({
         where: {
           email,
